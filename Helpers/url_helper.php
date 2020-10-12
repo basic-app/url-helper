@@ -5,6 +5,7 @@
  * @link https://basic-app.com
  */
 use Config\App;
+use BasicApp\UrlHelper\UrlHelper;
 
 if (!function_exists('url'))
 {
