@@ -101,7 +101,7 @@ class UrlHelper
 
     public static function redirect(string $url, string $method = 'auto', int $code = null)
     {
-        return service('response')->redirect($url, $method, $code);;
+        return service('response')->redirect($url, $method, $code)->withCookies();
     }
 
 }

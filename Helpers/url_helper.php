@@ -9,7 +9,7 @@ use BasicApp\UrlHelper\UrlHelper;
 
 if (!function_exists('url'))
 {
-    function url(string $uri, array $params = [], string $scheme = null, App $alt = null)
+    function url(string $uri, array $params = [], ?string $scheme = null, ?App $alt = null)
     {
         return UrlHelper::createUrl($uri, $params, $scheme, $alt);
     }
